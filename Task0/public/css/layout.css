@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+}
+html, body, .page{
+    height: 100%;
+    width: 100%;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #edeef0;
+}
+/*========HEADER=============
+ */
+header{
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 70px;
+    flex-grow: 0;
+    background-color: #4a76a8;
+}
+header > div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px auto;
+    font-size: 30px;
+    color: white;
+}
+/*
+===========CONTENT=============
+ */
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    height: auto;
+    flex-grow: 2;
+}
+input{
+    width: 100%;
+    height: auto;
+    font-size: 25px;
+}
+label{
+    font-size: 25px;
+}
+.name-user, .password-user, .email-user{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.enter-data{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.content > div{
+    margin-top: 30px;
+}
+.btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+button{
+    font-size: 25px;
+    padding: 10px;
+    background-color: #7109AA;
+    color: white;
+    border-radius: 10px;
+}
+/*
+==========FOOTER================
+*/
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    width: 100%;
+    height: auto;
+    min-height: 80px;
+    background-color: #4a76a8;
+}
+footer > div{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 25px;
+    margin: auto auto;
+}
+
