@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab_2</title>
+    <link rel="stylesheet" type="text/css" href="/layout.css">
+</head>
+<body>
+<div class="page">
+    <header>
+        <div>
+            Регистрация пользователя
+        </div>
+    </header>
+    <div class="content" id="cntnt">
+        <div class="enter-data">
+            <div class="name-user">
+                <label for="nm">Имя пользователя:</label>
+                <input type="text" name="name" id="nm">
+            </div>
+            <div class="password-user">
+                <label for="psw">Пароль пользователя:</label>
+                <input type="password" name="password" id="psw">
+            </div>
+            <div class="email-user">
+                <label for="eml">Email пользователя:</label>
+                <input type="email" name="email" id="eml">
+            </div>
+            <div class="btn">
+                <button type="submit" onclick="checkData()">Отправить</button>
+            </div>
+            <div class="btn">
+                <button onclick="changeBackgroundPage()">Изменить фон</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            © Выполнил: Солодков М.А
+        </div>
+        <div>
+            Email: mikhailsaladkou@gmail.com
+        </div>
+    </footer>
+</div>
+<script src="/layout.js" type="application/javascript"></script>
+</body>
+</html>
