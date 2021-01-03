@@ -1,11 +1,17 @@
 @import "utils";
 
+$background-color: #fff;
+$font-family: "GT Walsheim Pro", sans-serif;
+
 header{
   @include flex-container($flex_direction: row);
   height: 15vh;
   width: 100%;
-  background-color: #fff;
-  box-shadow: 0 0.2rem 0.2rem lightgray;
+  @if ($background-color != #fff){
+    $background-color: #fff;
+  }
+  background-color: $background-color;
+  @include box-shadow(0 0.2rem 0.2rem lightgray);
   z-index: 1;
 
   & .description{
@@ -14,7 +20,10 @@ header{
     align-content: center;
     width: 90vw;
     font-size: 1.4em;
-    font-family: "GT Walsheim Pro", sans-serif;
+    @if ($font-family != "GT Walsheim Pro", sans-serif){
+      $font-family: "GT Walsheim Pro", sans-serif;
+    }
+    font-family: $font-family;
   }
   & .info{
     @include flex-container($flex_direction: inline);
@@ -23,13 +32,19 @@ header{
     justify-content: center;
     align-content: center;
 
-    &:hover{
-      cursor: pointer;
+    @for $item from 1 to 2{
+      &:hover{
+        cursor: pointer;
+      }
     }
 
-    &:active{
-      background-color: #fff;
-      color: #30419b;
+    $item: 1;
+    @while $item > 0{
+      &:active{
+        background-color: #fff;
+        color: #30419b;
+      }
+      $item: $item - 1;
     }
   }
 }

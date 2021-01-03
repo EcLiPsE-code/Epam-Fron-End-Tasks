@@ -3,3 +3,7 @@
   flex-direction: $flex_direction;
   flex-wrap: wrap;
 }
+
+@mixin box-shadow($arguments...){
+  box-shadow: $arguments;
+}
