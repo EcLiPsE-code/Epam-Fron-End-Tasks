@@ -1,0 +1,38 @@
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 15vh;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0.2rem 0.2rem lightgray;
+  z-index: 1;
+}
+header .description {
+  display: flex;
+  flex-direction: inline;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 90vw;
+  font-size: 1.4em;
+  font-family: "GT Walsheim Pro", sans-serif;
+}
+header .info {
+  display: flex;
+  flex-direction: inline;
+  flex-wrap: wrap;
+  width: 5vw;
+  height: 15vh;
+  justify-content: center;
+  align-content: center;
+}
+header .info:hover {
+  cursor: pointer;
+}
+header .info:active {
+  background-color: #fff;
+  color: #30419b;
+}
+
+/*# sourceMappingURL=header.css.map */

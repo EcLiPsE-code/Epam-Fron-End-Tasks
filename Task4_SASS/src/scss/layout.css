@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 30px;
+  font-family: "GT Walsheim Pro", sans-serif;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100%;
+}
+
+/*# sourceMappingURL=layout.css.map */

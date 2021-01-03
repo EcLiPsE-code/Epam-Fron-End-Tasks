@@ -1,0 +1,40 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0.5em;
+}
+
+.heading {
+  display: flex;
+  flex-direction: inline;
+  flex-wrap: wrap;
+  font-size: 1.3em;
+  justify-content: center;
+}
+
+.rounded {
+  list-style: none;
+  font: 1.2em "GT Walsheim Pro";
+  padding: 0;
+  margin: 0 2.5vw;
+}
+
+.rounded a {
+  display: block;
+  padding: 0.4em 0.4em 0.4em 2em;
+  margin: 0.5em 0;
+  background: #DAD2CA;
+  color: #444;
+  text-decoration: none;
+  border-radius: 0.3em;
+  transition: 0.3s ease-out;
+}
+
+.rounded a:hover {
+  background: #E9E4E0;
+}
+
+/*# sourceMappingURL=home_page.css.map */
+
+/*# sourceMappingURL=home_page.css.map */

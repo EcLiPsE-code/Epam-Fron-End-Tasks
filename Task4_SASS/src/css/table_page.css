@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+.table-page {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.table-page .heading {
+  margin-top: 0.5em;
+}
+
+.table-page .table-с, .table-page .select-style-table {
+  display: flex;
+  flex-direction: inline;
+  flex-wrap: wrap;
+  margin-top: 0.5em;
+  justify-content: center;
+}
+
+table {
+  border-radius: 20px;
+  border-collapse: collapse;
+  /*убираем пустые промежутки между ячейками*/
+  border: 1px solid grey;
+}
+
+th, td {
+  border: 1px solid grey;
+  padding: 0.3em;
+  font-size: 1.1em;
+}
+
+input {
+  font-family: "GT Walsheim Pro", sans-serif;
+  font-size: 1.5em;
+  color: #fff;
+  background-color: #30419b;
+  padding: 0.2em;
+  margin-bottom: 0.2em;
+  margin-top: 0.4em;
+  border-radius: 0.2em;
+}
+
+select {
+  font-family: "GT Walsheim Pro", sans-serif;
+  font-size: 1.1em;
+}
+
+/*# sourceMappingURL=table_page.css.map */
+
+/*# sourceMappingURL=table_page.css.map */

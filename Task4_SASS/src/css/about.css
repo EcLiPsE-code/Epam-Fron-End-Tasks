@@ -1,0 +1,27 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 3vh 5vw;
+}
+
+hr {
+  margin-top: 5vh;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+}
+
+.contacts .email, .contacts .phone {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=about.css.map */
+
+/*# sourceMappingURL=about.css.map */

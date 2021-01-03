@@ -1,0 +1,8 @@
+@import "utils";
+
+.content{
+  @include flex-container(column);
+  flex: 1 0 auto;
+  background-color: #f9f9f9;
+  width: 100vw;
+}

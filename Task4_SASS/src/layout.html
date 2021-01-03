@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/home_page.css">
+    <link rel="stylesheet" href="./css/table_page.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/left_bar.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <label for="side-checkbox">
+                <div class="info">
+                    &#9776;
+                </div>
+            </label>
+            <div class="description">
+                Web site "Car service"
+            </div>
+        </header>
+        <div class="content">
+            <input type="checkbox" id="side-checkbox" />
+            <div class="left-menu">
+                <div class="home component" onclick="onChange('.home-page', '.table-page', '.about')">
+                    <div>Home</div>
+                    <div class="gt" id="home-gt">&gt;</div>
+                </div>
+                <div class="about-me component" onclick="onChange('.about', '.table-page', '.home-page')">
+                    <div>About</div>
+                    <div class="gt" id="about-gt">&gt;</div>
+                </div>
+                <div class="table component" onclick="onChange('.table-page', '.home-page', '.about')">
+                    <div>Table</div>
+                    <div class="gt" id="table-gt">&gt;</div>
+                </div>
+            </div>
+            <div class="main-content" id="root">
+                <div class="home-page" style="display: flex">
+                    <div class="heading">
+                        <p><strong>Information about web-site "Car Service"</strong></p>
+                    </div>
+                    <br>
+                    <div class="text">
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Information web-site
+                            <i>"Car Service"</i> represents the interests of everyone
+                            user and provides information on all maintenance
+                            service. Besides the list services, the user
+                            has access to the entire contact information
+                            for clarification information from the
+                            employee.
+                        </p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>More information is on the following tabs:</strong><br></p>
+                        <ol class="rounded">
+                            <li><a href="#">Home (detailed description)</a></li>
+                            <li><a href="#">Table (list of completed orders)</a></li>
+                            <li><a href="#">About (information about the author)</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="table-page" style="display: none">
+                    <div class="heading">
+                        <span><strong>Data Table</strong></span>
+                    </div>
+                    <div class="table-с">
+                        <table class="table_blur" id="tbl">
+                            <tr>
+                                <th>Master Name</th>
+                                <th>Completion date</th>
+                                <th>Date of completion</th>
+                                <th>Repair cost</th>
+                            </tr>
+                            <tr>
+                                <td>Master1</td>
+                                <td>15/09/2020</td>
+                                <td>25/10/2020</td>
+                                <td>23.5$</td>
+                            </tr>
+                            <tr>
+                                <td>Master2</td>
+                                <td>15/09/2020</td>
+                                <td>25/10/2020</td>
+                                <td>45.23$</td>
+                            </tr>
+                            <tr>
+                                <td>Master1</td>
+                                <td>15/09/2020</td>
+                                <td>25/10/2020</td>
+                                <td>33.3$</td>
+                            </tr>
+                            <tr>
+                                <td>Master4</td>
+                                <td>15/09/2020</td>
+                                <td>25/10/2020</td>
+                                <td>22.3$</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="select-style-table">
+                        <form onsubmit="return false">
+                            <strong>Select style table</strong>
+                            <p><label for="styles">Style:</label>
+                                <select type="text" id="styles">
+                                    <option>Style 1</option>
+                                    <option>Style 2</option>
+                                </select>
+                            </p>
+                            <p>
+                                <input type="submit" value="Применить" id="btn-click" onclick="changedTableStyle()">
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <div class="about" style="display: none">
+                    <div class="about-info">
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            This website was developed by a student
+                            of the Gomel State Technical University
+                            named after P.O. Sukhoi, 4th year student,
+                            specialty "Information systems and
+                            technologies in production and design."
+                        </span>
+                        <hr>
+                    </div>
+                    <div class="contacts">
+                        <div class="contacts-label">
+                            <span><strong>Contact Information:</strong></span>
+                        </div>
+                        <div class="email">
+                            <div class="email-label">
+                                <strong>Email:</strong>
+                            </div>
+                            &nbsp;
+                            <div>
+                                <i>mikhailsaladkou@gmail.com</i>
+                            </div>
+                        </div>
+                        <div class="phone">
+                            <div class="phone-label">
+                                <strong>Mobile phone:</strong>
+                            </div>
+                            &nbsp;
+                            <div>
+                                <i>+375336825667</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="current-date">
+                <div class="label">
+                    Current date:
+                </div>
+                &nbsp;
+                <div class="date" id="current-date">
+
+                </div>
+            </div>
+            <div class="admin-info">
+                <div class="label">
+                    The completed task:
+                </div>
+                &nbsp;
+                <div class="author-info">
+                    &copy;&nbsp;Solodkov M.A
+                </div>
+            </div>
+            <div class="task-version">
+                <div class="label">
+                    Version task:
+                </div>
+                &nbsp;
+                <div class="version">
+                    1.0
+                </div>
+            </div>
+        </footer>
+    </div>
+<script src="js/layout.js"></script>
+</body>
+</html>

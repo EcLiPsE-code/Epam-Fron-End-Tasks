@@ -1,0 +1,5 @@
+@mixin flex-container($flex_direction) {
+  display: flex;
+  flex-direction: $flex_direction;
+  flex-wrap: wrap;
+}

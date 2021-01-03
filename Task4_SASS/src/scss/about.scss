@@ -1,0 +1,22 @@
+@import "utils.scss";
+
+.about{
+  @include flex-container(row);
+  margin: 3vh 5vw;
+}
+
+hr{
+  margin-top: 5vh;
+}
+
+.contacts{
+  @include flex-container(column);
+  margin-top: 5vh;
+}
+
+.contacts{
+  & .email,
+  & .phone{
+    @include flex-container(row);
+  }
+}
