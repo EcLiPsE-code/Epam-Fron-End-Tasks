@@ -1,0 +1,220 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 3vh 5vw;
+}
+hr {
+  margin-top: 5vh;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+}
+.contacts .email,
+.contacts .phone {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+  background-color: #f9f9f9;
+  width: 100vw;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 0 0 auto;
+  width: 100vw;
+  height: 15vh;
+  background-color: #fff;
+  box-shadow: 0 -0.2rem 0.2rem lightgray;
+  z-index: 1;
+  font-size: 0.7em;
+  justify-content: center;
+  align-content: flex-start;
+}
+footer .current-date,
+footer .admin-info,
+footer .task-version {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 3vw;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 15vh;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0.2rem 0.2rem lightgray;
+  z-index: 1;
+}
+header .description {
+  display: flex;
+  flex-direction: inline;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 90vw;
+  font-size: 1.4em;
+  font-family: "GT Walsheim Pro", sans-serif;
+}
+header .info {
+  display: flex;
+  flex-direction: inline;
+  flex-wrap: wrap;
+  width: 5vw;
+  height: 15vh;
+  justify-content: center;
+  align-content: center;
+}
+header .info:hover {
+  cursor: pointer;
+}
+header .info:active {
+  background-color: #fff;
+  color: #30419b;
+}
+.home-page {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0.5em;
+}
+.heading {
+  display: flex;
+  flex-direction: inline;
+  flex-wrap: wrap;
+  font-size: 1.3em;
+  justify-content: center;
+}
+.rounded {
+  list-style: none;
+  font: 1.2em "GT Walsheim Pro";
+  padding: 0;
+  margin: 0 2.5vw;
+}
+.rounded a {
+  display: block;
+  padding: 0.4em 0.4em 0.4em 2em;
+  margin: 0.5em 0;
+  background: #DAD2CA;
+  color: #444;
+  text-decoration: none;
+  border-radius: 0.3em;
+  transition: 0.3s ease-out;
+}
+.rounded a:hover {
+  background: #E9E4E0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 30px;
+  font-family: "GT Walsheim Pro", sans-serif;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100%;
+}
+#side-checkbox {
+  display: none;
+}
+#side-checkbox:checked + .left-menu {
+  right: 0;
+}
+.left-menu {
+  position: fixed;
+  top: 0;
+  right: -20vw;
+  height: 100vh;
+  background-color: #30419b;
+  z-index: 10;
+  transition: 1s;
+}
+.left-menu .home,
+.left-menu .table,
+.left-menu .about-me {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0.2em 0.8em 0.2em 0.8em;
+}
+.left-menu .component {
+  display: flex;
+  flex-direction: inline;
+  flex-wrap: wrap;
+  width: 20vw;
+  justify-content: space-between;
+  align-items: center;
+  color: #7e84c4;
+}
+.left-menu .component:first-child {
+  margin-top: 1.5em;
+}
+.left-menu .component:hover {
+  cursor: pointer;
+  background-color: #3345a5;
+  color: #fff;
+}
+.table-page {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.table-page .heading {
+  margin-top: 0.5em;
+}
+.table-page .table-с,
+.table-page .select-style-table {
+  display: flex;
+  flex-direction: inline;
+  flex-wrap: wrap;
+  margin-top: 0.5em;
+  justify-content: center;
+}
+table {
+  border-radius: 20px;
+  border-collapse: collapse;
+  /*убираем пустые промежутки между ячейками*/
+  border: 1px solid grey;
+}
+th,
+td {
+  border: 1px solid grey;
+  padding: 0.3em;
+  font-size: 1.1em;
+}
+input {
+  font-family: "GT Walsheim Pro", sans-serif;
+  font-size: 1.5em;
+  color: #fff;
+  background-color: #30419b;
+  padding: 0.2em;
+  margin-bottom: 0.2em;
+  margin-top: 0.4em;
+  border-radius: 0.2em;
+}
+select {
+  font-family: "GT Walsheim Pro", sans-serif;
+  font-size: 1.1em;
+}
+/*# sourceMappingURL=styles.css.map */

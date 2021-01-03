@@ -1,0 +1,23 @@
+@import "utils";
+
+@background-color: #fff;
+
+footer{
+  .flex-container(@flex_direction: column);
+  flex: 0 0 auto;
+  width: 100vw;
+  height: 15vh;
+  background-color: #fff;
+  box-shadow: 0 -0.2rem 0.2rem lightgray;
+  z-index: 1;
+  font-size: 0.7em;
+  justify-content: center;
+  align-content: flex-start;
+
+  & .current-date,
+  & .admin-info,
+  & .task-version{
+    .flex-container(@flex_direction: row);
+    margin-left: 3vw;
+  }
+}

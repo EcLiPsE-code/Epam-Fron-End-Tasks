@@ -1,0 +1,36 @@
+@import "utils.less";
+
+header{
+  .flex-container(@flex_direction: row);
+  height: 15vh;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0.2rem 0.2rem lightgray;
+  z-index: 1;
+
+  & .description{
+    .flex-container(@flex_direction: inline);
+    justify-content: center;
+    align-content: center;
+    width: 90vw;
+    font-size: 1.4em;
+    font-family: "GT Walsheim Pro", sans-serif;
+  }
+  & .info{
+    .flex-container(@flex_direction: inline);
+    width: 5vw;
+    height: 15vh;
+    justify-content: center;
+    align-content: center;
+
+    &:hover{
+      cursor: pointer;
+    }
+
+    &:active{
+      background-color: #fff;
+      color: #30419b;
+    }
+  }
+}
+

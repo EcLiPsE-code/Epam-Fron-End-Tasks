@@ -1,0 +1,41 @@
+header #side-checkbox {
+  display: none;
+}
+header #side-checkbox:checked + .left-menu {
+  right: 0;
+}
+.left-menu {
+  position: fixed;
+  top: 0;
+  right: -20vw;
+  height: 100vh;
+  background-color: #30419b;
+  z-index: 10;
+  transition: 1s;
+}
+.left-menu .home,
+.left-menu .table,
+.left-menu .about-me {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0.2em 0.8em 0.2em 0.8em;
+}
+.left-menu .component {
+  display: flex;
+  flex-direction: inline;
+  flex-wrap: wrap;
+  width: 20vw;
+  justify-content: space-between;
+  align-items: center;
+  color: #7e84c4;
+}
+.left-menu .component:first-child {
+  margin-top: 1.5em;
+}
+.left-menu .component:hover {
+  cursor: pointer;
+  background-color: #3345a5;
+  color: #fff;
+}
+/*# sourceMappingURL=left-bar.css.map */

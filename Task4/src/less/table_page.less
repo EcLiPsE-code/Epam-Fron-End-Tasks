@@ -1,0 +1,44 @@
+@import "utils";
+
+.table-page{
+  .flex-container(@flex_direction: column);
+
+  & .heading{
+    margin-top: .5em;
+  }
+
+  & .table-с,
+  & .select-style-table{
+    .flex-container(@flex_direction: inline);
+    margin-top: .5em;
+    justify-content: center;
+  }
+}
+
+table{
+  border-radius: 20px;
+  border-collapse: collapse; /*убираем пустые промежутки между ячейками*/
+  border: 1px solid grey;
+}
+
+th, td{
+  border: 1px solid grey;
+  padding: .3em;
+  font-size: 1.1em;
+}
+
+input{
+  font-family: "GT Walsheim Pro", sans-serif;
+  font-size: 1.5em;
+  color: #fff;
+  background-color: #30419b;
+  padding: 0.2em;
+  margin-bottom: .2em;
+  margin-top: .4em;
+  border-radius: .2em;
+}
+
+select{
+  font-family: "GT Walsheim Pro", sans-serif;
+  font-size: 1.1em;
+}

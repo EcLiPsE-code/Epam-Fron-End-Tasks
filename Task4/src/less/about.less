@@ -1,0 +1,20 @@
+@import "utils.less";
+
+.about{
+  .flex-container(@flex_direction: row);
+  margin: 3vh 5vw;
+}
+
+hr{
+  margin-top: 5vh;
+}
+
+.contacts{
+  .flex-container(@flex_direction: column);
+  margin-top: 5vh;
+
+  & .email,
+  & .phone{
+    .flex-container(@flex_direction: row);
+  }
+}
