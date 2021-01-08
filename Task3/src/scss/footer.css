@@ -1,0 +1,20 @@
+footer {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: #ffffff;
+  color: #818c99;
+  box-shadow: lightgray 0 -1vh 3vh -0.8vh;
+  z-index: 10;
+}
+footer .author, footer .currentData, footer .version {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  font-size: 2.8vmin;
+  margin: 0 6vmin;
+  align-items: center;
+}
+footer .author .value, footer .currentData .value, footer .version .value {
+  padding-left: 0.2rem;
+}
+
+/*# sourceMappingURL=footer.css.map */

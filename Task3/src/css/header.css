@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  color: #25f586;
+  box-shadow: lightgray 0 0.1vmin 0.5vmin 0;
+}
+
+header .description {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 5vmin;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=header.css.map */
+
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1.5rem;
+  font-family: "GT Walsheim Pro", sans-serif;
+  display: grid;
+}
+
+.page{
+  display: grid;
+  grid-template-rows: 10vh 80vh 10vh;
+}
+
+select{
+  font-size: 4vmin;
+}
+
+button{
+  font-size: 3.5vmin;
+  align-items: center;
+  padding: .5vmin 6vmin;
+  color: #fff;
+  background-color: lightgray;
+  border-radius: .1vmin;
+  border: lightgray solid .1vmin;
+
+  &:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: lightgray;
+    transition: all .4s ease;
+
+    &:active{
+      color: #fff;
+      background-color: lightgray;
+    }
+  }
+}
+

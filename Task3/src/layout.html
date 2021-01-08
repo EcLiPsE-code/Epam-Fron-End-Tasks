@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="description">
+                Web site "Car service"
+            </div>
+        </header>
+        <div class="content">
+            <nav>
+                <div class="nav_inner">
+                    <div class="home_page">
+                        <div class="home" onclick="onChange('.home_content', '.about_content', '.table_content')">
+                            HOME
+                        </div>
+                    </div>
+                    <div class="about_page" onclick="onChange('.about_content', '.home_content', '.table_content')">
+                        <div class="about">
+                            ABOUT
+                        </div>
+                    </div>
+                    <div class="table_page">
+                        <div class="table" onclick="onChange('.table_content', '.about_content', '.home_content')">
+                            TABLE
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="content_inner">
+                <div class="about_content" style="display: none">
+                    <div class="about-info">
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            This website was developed by a student
+                            of the Gomel State Technical University
+                            named after P.O. Sukhoi, 4th year student,
+                            specialty "Information systems and
+                            technologies in production and design."
+                        </span>
+                    </div>
+                    <div class="contacts">
+                        <div class="contacts-label">
+                            <span><strong>Contact Information:</strong></span>
+                        </div>
+                        <div class="email">
+                            <div class="email-label">
+                                <strong>Email:&nbsp;</strong>
+                            </div>
+                            <div class="email-value">
+                                <i>mikhailsaladkou@gmail.com</i>
+                            </div>
+                        </div>
+                        <div class="phone">
+                            <div class="phone-label">
+                                <strong>Phone:&nbsp;</strong>
+                            </div>
+                            <div class="phone-value">
+                                <i>+375336825667</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home_content" style="display: none">
+                    <div class="news_1">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_2">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_3">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_4">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_5">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_6">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_7">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_8">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_9">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_10">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_11">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_12">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_13">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_14">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_15">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_16">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_17">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_18">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_19">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_20">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_21">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_23">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_24">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_25">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                    <div class="news_26">
+                        <div class="news_content">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Quisque consectetur lacinia
+                            dolor a feugiat. Pellentesque porttitor interdum
+                            lacus, id vehicula lorem tempor ut. Nulla
+                            facilisi. Integer commodo magna sit amet nibh
+                            dapibus ullamcorper. Suspendisse potenti.
+                            Nam vitae fringilla dui. Pellentesque
+                            fringilla aliquet velit nec ultricies.
+                            In luctus ligula turpis, eu aliquam orci
+                            blandit id. Aliquam scelerisque convallis magna
+                            eu dictum. Suspendisse elementum nibh at justo
+                            pretium, quis bibendum dolor sagittis. Phasellus
+                            eros dolor, blandit nec lacus sit amet, dapibus
+                            maximus lectus. Proin eleifend aliquam risus,
+                            nec vulputate urna malesuada ac. Nullam lobortis
+                            eget neque vel dapibus. Donec elementum massa ut
+                            dolor dictum aliquam.
+                        </div>
+                    </div>
+                </div>
+                <div class="table_content" style="display: grid">
+                    <div class="heading">
+                        <div class="label-heading">
+                            <strong>Data Table</strong>
+                        </div>
+                    </div>
+                    <div class="table_с">
+                        <table class="table_blur" id="tbl">
+                            <tbody>
+                                <tr>
+                                    <th>Master Name</th>
+                                    <th>Completion date</th>
+                                    <th>Date of completion</th>
+                                    <th>Repair cost</th>
+                                </tr>
+                                <tr>
+                                    <td>Master1</td>
+                                    <td>15/09/2020</td>
+                                    <td>25/10/2020</td>
+                                    <td>23.5$</td>
+                                </tr>
+                                <tr>
+                                    <td>Master2</td>
+                                    <td>15/09/2020</td>
+                                    <td>25/10/2020</td>
+                                    <td>45.23$</td>
+                                </tr>
+                                <tr>
+                                    <td>Master1</td>
+                                    <td>15/09/2020</td>
+                                    <td>25/10/2020</td>
+                                    <td>33.3$</td>
+                                </tr>
+                                <tr>
+                                    <td>Master4</td>
+                                    <td>15/09/2020</td>
+                                    <td>25/10/2020</td>
+                                    <td>22.3$</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="select-style-table">
+                        <form onsubmit="return false">
+                            <strong>Select style table</strong>
+                            <p><label for="styles">Style:</label>
+                                <select type="text" id="styles">
+                                    <option>Style 1</option>
+                                    <option>Style 2</option>
+                                </select>
+                            </p>
+                            <p class="p-button">
+                                <button id="btn-click" onclick="changedTableStyle()">Save</button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="author">
+                <div class="label">
+                    FullName:
+                </div>
+                <div class="value">
+                    &copy;&nbsp;Solodkov M.A
+                </div>
+            </div>
+            <div class="version">
+                <div class="label">
+                    Version task:
+                </div>
+                <div class="value">
+                    1.0
+                </div>
+            </div>
+            <div class="currentData">
+                <div class="label">
+                    Current data and time:
+                </div>
+                <div class="value" id="currentData">
+
+                </div>
+            </div>
+        </footer>
+    </div>
+<script src="js/layout.js"></script>
+</body>
+</html>
