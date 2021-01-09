@@ -5,7 +5,6 @@ header {
   font-size: 5vmin;
   align-items: center;
   box-shadow: #d7dedb 0 0.1vmin 2vmin 0.2vmin;
-  width: 100vw;
 }
 header div {
   display: flex;

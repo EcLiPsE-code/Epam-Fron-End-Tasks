@@ -1,9 +1,12 @@
 footer {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 100vw;
+  grid-template-rows: 5vh 5vh;
   box-shadow: #d7dedb 0 -0.1vmin 2vmin 0.2vmin;
-  width: 100vw;
+  font-size: 4vmin;
+}
+
+footer .author, footer .current_date {
+  padding-left: 5vw;
 }
 
 /*# sourceMappingURL=footer.css.map */
