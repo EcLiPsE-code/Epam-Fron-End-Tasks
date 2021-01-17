@@ -6,14 +6,11 @@ header {
   align-items: center;
   box-shadow: #d7dedb 0 0.1vmin 2vmin 0.2vmin;
 }
-
 header div {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
   width: min-content;
 }
-
-/*# sourceMappingURL=header.css.map */
 
 /*# sourceMappingURL=header.css.map */

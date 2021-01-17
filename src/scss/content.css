@@ -1,6 +1,118 @@
 .content {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   width: 100vw;
+}
+.content .content_inner {
+  display: grid;
+  grid-template-rows: 10vh 5vh 5vh 5vh 1fr;
+  width: 40vw;
+  max-width: 40vw;
+  min-width: 40vw;
+  height: 60vh;
+  max-height: 60vh;
+  min-height: 60vh;
+  align-items: center;
+  margin: auto auto;
+  box-shadow: lightgray 0.1vmin 0.1vmin 2vmin 0.5vmin;
+  border-radius: 2vmin;
+}
+.content .content_inner .expression_result {
+  display: flex;
+  flex-wrap: wrap;
+  height: 10vh;
+  max-height: 10vh;
+  width: 40vw;
+  max-width: 40vw;
+  overflow-x: auto;
+  border-bottom: #d7dedb solid 0.1vmin;
+}
+.content .content_inner .expression_result > div {
+  display: flex;
+  align-items: center;
+  padding: 0 2vmin;
+  font-size: 5vmin;
+  width: 40vw;
+}
+.content .content_inner .operation_container {
+  display: grid;
+  grid-template-columns: repeat(5, 8vw);
+  height: 5vh;
+  border-bottom: #d7dedb solid 0.1vmin;
+}
+.content .content_inner .operation_container .operation {
+  display: flex;
+  flex-wrap: wrap;
+  height: 5vh;
+  font-size: 3vmin;
+  justify-content: center;
+  align-items: center;
+}
+.content .content_inner .operation_container .operation:hover {
+  cursor: pointer;
+  background-color: #d7dedb;
+  color: #fff;
+  transition: 0.4s;
+}
+.content .content_inner .operation_container .operation:hover:active {
+  background-color: #fff;
+  color: #d7dedb;
+}
+.content .content_inner .operation_mode, .content .content_inner .priority_operation {
+  display: grid;
+  grid-template-columns: 20vw 20vw;
+  height: 5vh;
+  font-size: 3vmin;
+  border-bottom: #d7dedb solid 0.1vmin;
+}
+.content .content_inner .operation_mode .mode, .content .content_inner .priority_operation .mode, .content .content_inner .priority_operation .priority {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.content .content_inner .operation_mode .mode > div, .content .content_inner .priority_operation .operation_mode .priority > div, .content .content_inner .priority_operation .mode > div, .content .content_inner .priority_operation .priority > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.content .content_inner .operation_mode .mode > div .radio > #cb_real_mode, .content .content_inner .priority_operation .mode > div .radio > #cb_real_mode, .content .content_inner .priority_operation .priority > div .radio > #cb_real_mode,
+.content .content_inner .operation_mode .mode > div #cb_integer_mode,
+.content .content_inner .priority_operation .mode > div #cb_integer_mode,
+.content .content_inner .priority_operation .priority > div #cb_integer_mode {
+  transform: scale(0.8);
+}
+.content .content_inner .operation_mode .mode > div .label_radio, .content .content_inner .priority_operation .mode > div .label_radio, .content .content_inner .priority_operation .priority > div .label_radio {
+  font-size: 2vmin;
+}
+.content .content_inner .priority_operation .priority > div > label {
+  font-size: 2vmin;
+}
+.content .content_inner .digits {
+  display: grid;
+  grid-template-columns: repeat(4, 10vw);
+  grid-template-rows: repeat(3, 11vh);
+  height: 35vh;
+}
+.content .content_inner .digits .digit, .content .content_inner .digits .remove_expression, .content .content_inner .digits .coma_real {
+  display: flex;
+  flex-wrap: wrap;
+  height: 8.75vh;
+  width: 10vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vmin;
+}
+.content .content_inner .digits .digit:hover, .content .content_inner .digits .remove_expression:hover, .content .content_inner .digits .coma_real:hover {
+  cursor: pointer;
+  background-color: #d7dedb;
+  color: #fff;
+}
+.content .content_inner .digits .digit:hover:active, .content .content_inner .digits .remove_expression:hover:active, .content .content_inner .digits .coma_real:hover:active {
+  background-color: #fff;
+  color: #d7dedb;
 }
 
 /*# sourceMappingURL=content.css.map */

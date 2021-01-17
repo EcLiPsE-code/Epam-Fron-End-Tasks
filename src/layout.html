@@ -16,7 +16,103 @@
             </div>
         </header>
         <div class="content">
-
+            <div class="content_inner">
+                <div class="expression_result">
+                    <div id="expression_result">
+                    </div>
+                </div>
+                <div class="operation_container">
+                    <div class="operation operation_addition">
+                        <div id="addition">+</div>
+                    </div>
+                    <div class="operation operation_subtraction">
+                        <div id="subtraction">-</div>
+                    </div>
+                    <div class="operation operation_division">
+                        <div id="division">/</div>
+                    </div>
+                    <div class="operation operation_multiplication">
+                        <div id="multiplication">*</div>
+                    </div>
+                    <div class="operation operation_calculate">
+                        <div id="calculate">=</div>
+                    </div>
+                </div>
+                <div class="operation_mode">
+                    <div class="mode real_mode">
+                        <div>
+                            <div class="radio">
+                                <input name="group1" type="radio" id="cb_real_mode" onclick="changeRadioButton()" checked>
+                            </div>
+                            <div class="label_radio">
+                                <label for="cb_real_mode">Вещ-ый режим</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mode integer_mode">
+                        <div>
+                            <div class="radio">
+                                <input name="group1" type="radio" id="cb_integer_mode" onclick="changeRadioButton()">
+                            </div>
+                            <div class="label_radio">
+                                <label for="cb_integer_mode">Цело-ый режим</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="priority_operation">
+                    <div class="priority yes-priority">
+                        <div>
+                            <input checked type="checkbox" id="cb_yes" onclick="changeCheckbox('cb_yes', 'cb_no')">
+                            <label for="cb_yes">С приоритетом</label>
+                        </div>
+                    </div>
+                    <div class="priority no-priority">
+                        <div>
+                            <input type="checkbox" id="cb_no" onclick="changeCheckbox('cb_no', 'cb_yes')">
+                            <label for="cb_no">Без приоритета</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="digits">
+                    <div class="digit digit_1">
+                        <div>1</div>
+                    </div>
+                    <div class="digit digit_2">
+                        <div>2</div>
+                    </div>
+                    <div class="digit digit_3">
+                        <div>3</div>
+                    </div>
+                    <div class="digit digit_4">
+                        <div>4</div>
+                    </div>
+                    <div class="digit digit_5">
+                        <div>5</div>
+                    </div>
+                    <div class="digit digit_6">
+                        <div>6</div>
+                    </div>
+                    <div class="digit digit_7">
+                        <div>7</div>
+                    </div>
+                    <div class="digit digit_8">
+                        <div>8</div>
+                    </div>
+                    <div class="digit digit_9">
+                        <div>9</div>
+                    </div>
+                    <div class="digit digit_10">
+                        <div>0</div>
+                    </div>
+                    <div class="remove_expression" onclick="removeExpression()">
+                        CE
+                    </div>
+                    <div class="operation coma_real" style="display: flex">
+                        .
+                    </div>
+                </div>
+            </div>
         </div>
         <footer>
             <div class="author">
