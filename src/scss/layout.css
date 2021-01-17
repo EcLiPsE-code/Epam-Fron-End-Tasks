@@ -1,0 +1,40 @@
+* {
+  font-family: "GT Walsheim Pro", sans-serif;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.root {
+  display: grid;
+  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-columns: 100vw;
+}
+
+button {
+  font-size: 5vmin;
+  border-radius: 1vmin;
+  padding: 0.3vmin 1vmin;
+  border: #d7dedb solid 0.1vmin;
+  background-color: #d7dedb;
+  color: #fff;
+  font-family: "GT Walsheim Pro", sans-serif;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #d7dedb;
+  transition: 0.4s;
+  border: #d7dedb solid 0.4vmin;
+}
+button:hover:active {
+  background-color: #d7dedb;
+  color: #fff;
+}
+
+/*# sourceMappingURL=layout.css.map */

@@ -1,0 +1,15 @@
+header{
+  display: flex;
+  background-color: #fff;
+  color: #10c46d;
+  font-size: 5vmin;
+  align-items: center;
+  box-shadow: #d7dedb 0 .1vmin 2vmin .2vmin;
+
+  & div{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: min-content;
+  }
+}

@@ -1,0 +1,144 @@
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+
+  & .content_inner{
+    display: grid;
+    grid-template-rows: 10vh 5vh 5vh 5vh 1fr;
+    width: 40vw;
+    max-width: 40vw;
+    min-width: 40vw;
+    height: 60vh;
+    max-height: 60vh;
+    min-height: 60vh;
+    align-items: center;
+    margin: auto auto;
+    box-shadow: lightgray .1vmin .1vmin 2vmin .5vmin;
+    border-radius: 2vmin;
+
+    & .expression_result{
+      display: flex;
+      flex-wrap: wrap;
+      height: 10vh;
+      max-height: 10vh;
+      width: 40vw;
+      max-width: 40vw;
+      overflow-x: auto;
+      border-bottom: #d7dedb solid .1vmin;
+
+      & > div{
+        display: flex;
+        align-items: center;
+        padding: 0 2vmin;
+        font-size: 5vmin;
+        width: 40vw;
+      }
+    }
+
+    & .operation_container{
+      display: grid;
+      grid-template-columns: repeat(5, 8vw);
+      height: 5vh;
+      border-bottom: #d7dedb solid .1vmin;
+
+      & .operation{
+        display: flex;
+        flex-wrap: wrap;
+        height: 5vh;
+        font-size: 3vmin;
+        justify-content: center;
+        align-items: center;
+
+        &:hover{
+          cursor: pointer;
+          background-color: #d7dedb;
+          color: #fff;
+          transition: .4s;
+
+          &:active{
+            background-color: #fff;
+            color: #d7dedb;
+          }
+        }
+      }
+    }
+
+    & .operation_mode{
+      display: grid;
+      grid-template-columns: 20vw 20vw;
+      height: 5vh;
+      font-size: 3vmin;
+      border-bottom: #d7dedb solid .1vmin;
+
+      & .mode{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        & > div{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+
+          & .radio > #cb_real_mode,
+          #cb_integer_mode {
+            transform: scale(0.8);
+          }
+
+          & .label_radio{
+            font-size: 2vmin;
+          }
+        }
+      }
+    }
+
+    & .priority_operation{
+      @extend .operation_mode;
+
+      & .priority{
+        @extend .mode;
+
+        & > div > label{
+          font-size: 2vmin;
+        }
+      }
+    }
+
+    & .digits{
+      display: grid;
+      grid-template-columns: repeat(4, 10vw);
+      grid-template-rows: repeat(3, 11vh);
+      height: 35vh;
+
+      & .digit{
+        display: flex;
+        flex-wrap: wrap;
+        height: 8.75vh;
+        width: 10vw;
+        justify-content: center;
+        align-items: center;
+        font-size: 3vmin;
+
+        &:hover{
+          cursor: pointer;
+          background-color: #d7dedb;
+          color: #fff;
+
+          &:active{
+            background-color: #fff;
+            color: #d7dedb;
+          }
+        }
+      }
+
+      & .remove_expression,
+      & .coma_real{
+        @extend .digit
+      }
+    }
+  }
+}
