@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizzeria</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/content.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="header_label">
+                Pizzeria
+            </div>
+        </header>
+        <div class="content_wrapper">
+            <div class="content_inner">
+                <div class="created_pizza">
+                    <div class="created_pizza_inner">
+                        <div class="base">
+                            <div class="base_label">
+                                Base pizza:
+                            </div>
+                            <div class="content_base">
+                                <select name="base" id="base_id">
+                                    <option value="thin" onclick="determinationBase()" selected>Thin</option>
+                                    <option value="thick" onclick="determinationBase()">Thick</option>
+                                    <option value="puff" onclick="determinationBase()">Puff</option>
+                                    <option value="calzone" onclick="determinationBase()">Calzone</option>
+                                    <option value="italian" onclick="determinationBase()">Italian</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="ingredients">
+                            <div class="ingredients_inner">
+                                <div class="ingredients_label">
+                                    Ingredients pizza:
+                                </div>
+                                <div class="ingredients_content">
+                                    <select name="ingredient" id="ingredient_id">
+                                        <option value="cheese" selected>Cheese</option>
+                                        <option value="sausage">Sausage</option>
+                                        <option value="meat">Meat</option>
+                                        <option value="olives">Olives</option>
+                                        <option value="seafood">Seafood</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="btn_ingredients">
+                                <div class="add_btn" onclick="addIngredient()">
+                                    Add
+                                </div>
+                                <div class="delete_btn" onclick="deleteIngredient()">
+                                    Delete
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sauces">
+                            <div class="sauces_inner">
+                                <div class="sauces_label">
+                                    Pizza sauces:
+                                </div>
+                                <div class="sauces_content">
+                                    <select name="sauce" id="sauce_id">
+                                        <option value="tomato" selected>Tomato</option>
+                                        <option value="white">White</option>
+                                        <option value="pesto">Pesto</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="btn_sauces">
+                                <div class="add_btn" onclick="addSauce()">
+                                    Add
+                                </div>
+                                <div class="delete_btn" onclick="deleteSauce()">
+                                    Delete
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_create">
+                            <div class="btn_create_inner" onclick="createPizza()">
+                                Create
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result_pizza">
+                        <div class="result_pizza_inner">
+                            <div class="label_info">
+                                Pizza info
+                            </div>
+                            <div class="result_pizza_content">
+                                <div class="pizza_cost">
+                                    <div class="cost_label">
+                                        Cost pizza:
+                                    </div>
+                                    <div class="cost_content" id="cost_pizza">
+                                        0$
+                                    </div>
+                                </div>
+                                <div class="calories_of_pizza">
+                                    <div class="calories_pizza_label">
+                                        Count calories:
+                                    </div>
+                                    <div class="calories_content" id="calories_pizza">
+                                        0
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_inner">
+                <div class="fio">
+                    <div class="fio_label">
+                        FullName:&nbsp;
+                    </div>
+                    <div class="fio_content">
+                        Solodkov M.A
+                    </div>
+                </div>
+                <div class="email">
+                    <div class="email_label">
+                        Email:&nbsp;
+                    </div>
+                    <div class="email_content">
+                        mikhailsaladkou@gmail.com
+                    </div>
+                </div>
+                <div class="time">
+                    <div class="time_label">
+                        Current data:&nbsp;
+                    </div>
+                    <div class="time_content" id="current_date">
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/products/base.js"></script>
+    <script src="js/products/ingredient.js"></script>
+    <script src="js/products/pizza.js"></script>
+    <script src="js/products/sauce.js"></script>
+    <script src="js/utils/utilProduct.js"></script>
+    <script src="js/utils/utils.js"></script>
+    <script src="js/layout.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: lightgray 0 0.3vmin 2vmin 0;
+}
+
+header .header_label {
+  font-size: 6vmin;
+  color: #15d66f;
+}
+
+/*# sourceMappingURL=header.css.map */
+
+/*# sourceMappingURL=header.css.map */
