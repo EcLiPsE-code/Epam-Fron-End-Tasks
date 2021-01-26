@@ -1,0 +1,217 @@
+.content_wrapper{
+  margin: auto auto;
+
+  .content_inner{
+    display: grid;
+    width: 70vw;
+    max-width: 70vw;
+    color: #15d66f;
+
+    & .created_pizza{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 2.5vh 0;
+
+      & .created_pizza_inner {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 30vw;
+        box-shadow: lightgray 0 .1vmin .1vmin .1vmin, lightgray 0 -.1vmin .8vmin 0;
+        border-radius: 2vmin;
+
+        & .base{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+          margin-top: 2vmin;
+          justify-content: space-between;
+          font-size: 3vmin;
+
+          & .base_label{
+            margin-left: 2vmin;
+          }
+          & .content_base{
+            margin-right: 2vmin;
+          }
+        }
+
+        & .ingredients{
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+
+          & .ingredients_inner{
+            @extend .base;
+
+            & .ingredients_label{
+              @extend .base_label;
+            }
+
+            & .ingredients_content{
+              @extend .content_base;
+            }
+          }
+
+          & .btn_ingredients{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            & .add_btn{
+              margin-top: 2vmin;
+              margin-left: 2vmin;
+              font-size: 3vmin;
+              background-color: #15d66f;
+              color: #fff;
+              border: #15d66f .4vmin solid;
+              padding: 1vmin 2.5vmin;
+              border-radius: 1vmin;
+
+              &:hover{
+                background-color: #fff;
+                color: #15d66f;
+                border: #15d66f .4vmin solid;
+                transition: .5s;
+
+                &:active{
+                  background-color: #15d66f;
+                  color: #fff;
+                }
+              }
+            }
+
+            & .delete_btn{
+              margin-top: 2vmin;
+              margin-right: 2vmin;
+              font-size: 3vmin;
+              background-color: #15d66f;
+              color: #fff;
+              border: #15d66f .4vmin solid;
+              padding: 1vmin 2.5vmin;
+              border-radius: 1vmin;
+
+              &:hover{
+                background-color: #fff;
+                color: #15d66f;
+                border: #15d66f .4vmin solid;
+                transition: .5s;
+
+                &:active{
+                  background-color: #15d66f;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+
+        & .sauces{
+          @extend .ingredients;
+
+          .sauces_inner{
+            @extend .base;
+
+            & .sauces_label{
+              @extend .base_label;
+            }
+
+            & .sauces_content{
+              @extend .content_base
+            }
+          }
+
+          & .btn_sauces{
+            @extend .btn_ingredients;
+          }
+        }
+
+        & .btn_create{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 2vmin;
+
+          & .btn_create_inner{
+            margin-top: 2vmin;
+            margin-left: 2vmin;
+            font-size: 3vmin;
+            background-color: #15d66f;
+            color: #fff;
+            border: #15d66f .4vmin solid;
+            padding: 1vmin 2.5vmin;
+            border-radius: 1vmin;
+
+            &:hover{
+              background-color: #fff;
+              color: #15d66f;
+              border: #15d66f .4vmin solid;
+              transition: .5s;
+
+              &:active{
+                background-color: #15d66f;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+
+      & .result_pizza{
+        @extend .created_pizza_inner;
+        display: flex;
+        flex-wrap: wrap;
+
+        & .result_pizza_inner{
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          margin: 2vmin 2vmin;
+
+          & .label_info{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-size: 6vmin;
+            border-bottom: lightgray .4vmin solid;
+          }
+
+          & .result_pizza_content{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-top: 2vmin;
+
+            & .pizza_cost{
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              align-items: center;
+              padding: 2vmin;
+              font-size: 4vmin;
+
+              & .cost_content{
+                color: black;
+              }
+            }
+
+            & .calories_of_pizza{
+              @extend .pizza_cost;
+
+              & .calories_content{
+                @extend .cost_content;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
