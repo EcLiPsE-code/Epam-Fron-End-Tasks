@@ -106,13 +106,15 @@ function determinationBase(){
 function createPizza(){
     const pizzaJSON = new Pizza(base, ingredients, sauces).toJSON()
 
-    fetch('http://localhost/pizzeria/order', {
+    fetch('/pizzeria/order', {
         method: 'POST',
-        body: pizzaJSON
+        body: pizzaJSON,
+        headers: {
+            'Content-Type': 'application/json;charset=utf-8'
+        }
     })
         .then(result => result.json())
         .then(result => {
-            console.log('Your order is accepted')
             alert('Your order is accepted')
         })
         .catch(error => {
