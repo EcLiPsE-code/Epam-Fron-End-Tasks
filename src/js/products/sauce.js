@@ -63,4 +63,12 @@ class Sauce{
             `Name: ${this.name}, cost: ${this.cost}, calories: ${this.calories}` :
             `${this.cost}`
     }
+
+    toJSON(){
+        return JSON.stringify({
+            'name' : this.name,
+            'cost' : this.cost,
+            'calories' : this.calories
+        })
+    }
 }

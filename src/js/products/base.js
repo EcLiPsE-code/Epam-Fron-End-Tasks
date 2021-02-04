@@ -4,7 +4,6 @@
  * The class that describes the Pizza Base object
  */
 class Base {
-    baseInfo
     name
     cost
     calories
@@ -13,42 +12,29 @@ class Base {
      * @param baseInfo {Object}
      */
     constructor(baseInfo) {
-        this.baseInfo = baseInfo
         this.name = baseInfo['name']
         this.cost = baseInfo['cost']
         this.calories = baseInfo['calories']
     }
 
     /**
-     *
-     * @returns {Object}
-     */
-    get baseInfo(){return this.baseInfo}
-
-    /**
      * Return name of the selected base
      * @returns {String}
      */
-    get name(){return this.baseInfo['name']}
+    get name(){return this.name}
 
     /**
      * Return count of the selected base
      * @returns {Number}
      */
-    get cost(){return this.baseInfo['cost']}
+    get cost(){return this.cost}
 
     /**
      * Return the number of calories of the selected base
      * @returns {Number}
      */
-    get calories(){return this.baseInfo['calories']}
+    get calories(){return this.calories}
 
-    set baseInfo(value){
-        if (value === '' || value === undefined){
-            throw new Error('Incorrect base pizza')
-        }
-        this.baseInfo = value;
-    }
     set name(value){
         if (value === '' || value === undefined){
             throw  new Error('Incorrect name base pizza')
@@ -72,5 +58,13 @@ class Base {
         return hint === 'string'?
             `{Name: ${this.name}, cost: ${this.cost}, calories: ${this.calories}` :
             `${this.cost}`
+    }
+
+    toJSON(){
+        return JSON.stringify({
+            'name' : this.name,
+            'cost' : this.cost,
+            'calories' : this.calories
+        })
     }
 }

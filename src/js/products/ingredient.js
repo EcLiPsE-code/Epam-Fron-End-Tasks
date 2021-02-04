@@ -39,17 +39,6 @@ class Ingredient{
 
     /**
      *
-     * @param value {Object}
-     */
-    set ingredientInfo(value){
-        if (value === '' || value === undefined){
-            throw new Error('Incorrect ingredientInfo')
-        }
-        this.ingredientInfo = value
-    }
-
-    /**
-     *
      * @param value {String}
      */
     set name(value){
@@ -77,5 +66,13 @@ class Ingredient{
         return hint === 'string'?
             `Name: ${this.name}, cost: ${this.cost}, calories: ${this.calories}` :
             `${this.cost}`
+    }
+
+    toJSON(){
+        return JSON.stringify({
+            'name' : this.name,
+            'cost' : this.cost,
+            'calories' : this.calories
+        })
     }
 }
