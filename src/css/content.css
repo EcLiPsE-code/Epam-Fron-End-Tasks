@@ -1,0 +1,31 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-height: 80vh;
+}
+
+.content .content_inner {
+  width: 80vh;
+  min-width: 80vh;
+  max-width: 80vh;
+  height: 80vh;
+  min-height: 80vh;
+  max-height: 80vh;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.content .content_inner .image {
+  width: 450px;
+  min-width: 400px;
+  height: 400px;
+  min-height: 400px;
+  margin: 5vmin auto;
+  box-shadow: lightgray 0 0 2vmin 0.2vmin;
+  z-index: -10;
+}
+
+/*# sourceMappingURL=content.css.map */
+
+/*# sourceMappingURL=content.css.map */

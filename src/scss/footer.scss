@@ -1,0 +1,21 @@
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2.5vmin;
+  box-shadow: lightgray 0 0 2vmin .5vmin;
+
+  & .footer_inner{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 3vmin;
+    justify-content: center;
+
+    & .author,
+    & .date{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
