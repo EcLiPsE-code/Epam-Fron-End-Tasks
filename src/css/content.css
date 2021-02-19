@@ -1,0 +1,148 @@
+.page {
+  display: grid;
+  grid-template-rows: 40vh 40vh 40vh 50vh 70vh;
+  max-width: 80vw;
+  max-height: 100vh;
+  margin: 5vmin auto;
+}
+
+.page .part {
+  display: flex;
+  flex-direction: column;
+  margin: 3vmin 0;
+  box-shadow: 0 0 1vmin rgba(0, 0, 0, 0.1);
+}
+
+.page .part .part-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 30vh;
+  overflow-y: auto;
+  margin: 2vmin 0;
+}
+
+.page .part .part-content div {
+  margin: 1vmin 0;
+  font-family: "Google Sans", Roboto, sans-serif;
+  font-size: 2.5vmin;
+}
+
+.page .part .part-label {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1vmin 0;
+  font-family: "Google Sans Medium", Roboto, sans-serif;
+  font-size: 2.4vmin;
+}
+
+.page .part .edit-overwriting-data {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 5vmin;
+  overflow-y: auto;
+}
+
+.page .part .edit-overwriting-data .add-data, .page .part .edit-overwriting-data .edit-data {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.page .part .edit-overwriting-data .add-data .add, .page .part .edit-overwriting-data .edit-data .add, .page .part .edit-overwriting-data .edit-data .edit {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: "Google Sans", Roboto, sans-serif;
+  font-size: 3vmin;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page .part .edit-overwriting-data .add-data .add div, .page .part .edit-overwriting-data .edit-data .add div, .page .part .edit-overwriting-data .edit-data .edit div {
+  display: flex;
+  margin: 2vmin 2vmin;
+}
+
+.page .part .edit-overwriting-data .add-data .add .add-separator, .page .part .edit-overwriting-data .edit-data .add .add-separator, .page .part .edit-overwriting-data .edit-data .edit .add-separator {
+  margin: 0 2vmin;
+}
+
+.page .part .edit-overwriting-data .add-data .btn-add, .page .part .edit-overwriting-data .edit-data .btn-add {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 2vmin;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page .part .edit-overwriting-data .add-data .btn-add .btn, .page .part .edit-overwriting-data .edit-data .btn-add .btn {
+  display: flex;
+  padding: 1vmin 3vmin;
+  border: lightgray 0.4vmin solid;
+  background-color: lightgray;
+  color: white;
+  font-family: "Google Sans", Roboto, sans-serif;
+  font-size: 2.5vmin;
+  border-radius: 0.9vmin;
+}
+
+.page .part .edit-overwriting-data .add-data .btn-add .btn:hover, .page .part .edit-overwriting-data .edit-data .btn-add .btn:hover {
+  background-color: #fff;
+  color: black;
+  transition-duration: 0.4s;
+}
+
+.page .part .edit-overwriting-data .add-data .btn-add .btn:hover:active, .page .part .edit-overwriting-data .edit-data .btn-add .btn:hover:active {
+  background-color: lightgray;
+  color: white;
+}
+
+.page .part .edit-overwriting-data .edit-data .btn-edit {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 2vmin;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page .part .edit-overwriting-data .edit-data .btn-edit .btns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.page .part .edit-overwriting-data .edit-data .btn-edit .btns .btn {
+  display: flex;
+  padding: 1vmin 3vmin;
+  border: lightgray 0.4vmin solid;
+  background-color: lightgray;
+  color: white;
+  font-family: "Google Sans", Roboto, sans-serif;
+  font-size: 2.5vmin;
+  border-radius: 0.9vmin;
+}
+
+.page .part .edit-overwriting-data .edit-data .btn-edit .btns .btn:hover {
+  background-color: #fff;
+  color: black;
+  transition-duration: 0.4s;
+}
+
+.page .part .edit-overwriting-data .edit-data .btn-edit .btns .btn:hover:active {
+  background-color: lightgray;
+  color: white;
+}
+
+.page .part .edit-overwriting-data .edit-data .btn-edit .btns div:last-child {
+  margin-left: 1.5vmin;
+}
+
+/*# sourceMappingURL=content.css.map */
+
+/*# sourceMappingURL=content.css.map */

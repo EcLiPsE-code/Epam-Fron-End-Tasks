@@ -1,0 +1,28 @@
+html,
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input{
+  margin: 0;
+  padding: 0 .6vmin;
+  font-family: "Google Sans", Roboto, sans-serif;
+  font-size: 2.5vmin;
+  border: none;
+  border-bottom: lightgray .2vmin solid;
+  width: 10vw;
+
+  &:hover{
+    border-bottom: lightgray .4vmin solid;
+    transition-duration: .4s;
+  }
+}
+
+select{
+  font-family: "Google Sans", Roboto, sans-serif;
+  font-size: 2.5vmin;
+  border-radius: 1vmin;
+}
