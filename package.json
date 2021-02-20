@@ -1,0 +1,23 @@
+{
+  "name": "task-9",
+  "version": "1.0.0",
+  "description": "EPAM Training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EcLiPsE-code/Epam-Fron-End-Tasks.git"
+  },
+  "author": "Solodkov M.A <mikhailsaladkou@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EcLiPsE-code/Epam-Fron-End-Tasks/issues"
+  },
+  "homepage": "https://github.com/EcLiPsE-code/Epam-Fron-End-Tasks#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

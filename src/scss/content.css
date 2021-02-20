@@ -1,0 +1,233 @@
+.content-wrapper .content-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50vh 40vh;
+      grid-template-rows: 50vh 40vh;
+}
+
+.content-wrapper .content-inner .edit-student {
+  width: 40vw;
+  margin: 0 auto;
+}
+
+.content-wrapper .content-inner .edit-student .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (8vh)[5];
+      grid-template-rows: repeat(5, 8vh);
+  margin: 5vh 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 1.5vmin;
+  -webkit-box-shadow: 0 1vmin 2vmin rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 0 -1vmin 3vmin;
+          box-shadow: 0 1vmin 2vmin rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 0 -1vmin 3vmin;
+}
+
+.content-wrapper .content-inner .edit-student .content .data-edit {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+}
+
+.content-wrapper .content-inner .edit-student .content .data-edit .label-edit-data,
+.content-wrapper .content-inner .edit-student .content .data-edit .input-edit-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3vmin;
+}
+
+.content-wrapper .content-inner .edit-student .content .data-edit .label-edit-data {
+  padding-left: 2vmin;
+}
+
+.content-wrapper .content-inner .edit-student .content .data-edit .input-edit-data .input-edit {
+  width: 80%;
+}
+
+.content-wrapper .content-inner .edit-student .content .btn-edit, .content-wrapper .content-inner .edit-student .content .all-students .all-students-content .table-content .page .row .btn-delete, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .edit-student .content .btn-delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.5vmin;
+}
+
+.content-wrapper .content-inner .edit-student .content .btn-edit .edit, .content-wrapper .content-inner .edit-student .content .all-students .all-students-content .table-content .page .row .btn-delete .edit, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .edit-student .content .btn-delete .edit, .content-wrapper .content-inner .edit-student .content .btn-edit .add, .content-wrapper .content-inner .edit-student .content .all-students .all-students-content .table-content .page .row .btn-delete .add, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .edit-student .content .btn-delete .add, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .btn-delete .edit-student .content .btn-edit .delete, .content-wrapper .content-inner .edit-student .content .all-students .all-students-content .table-content .page .row .btn-delete .delete, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .edit-student .content .btn-delete .delete {
+  padding: 1vmin 2vmin;
+  font-size: 3vmin;
+  font-family: "GT Walsheim Pro", sans-serif;
+  border: #8A2BE2 .4vmin solid;
+  border-radius: 1.3vmin;
+  background-color: #8A2BE2;
+  color: #fff;
+}
+
+.content-wrapper .content-inner .edit-student .content .btn-edit .edit:hover, .content-wrapper .content-inner .edit-student .content .all-students .all-students-content .table-content .page .row .btn-delete .edit:hover, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .edit-student .content .btn-delete .edit:hover, .content-wrapper .content-inner .edit-student .content .btn-edit .add:hover, .content-wrapper .content-inner .edit-student .content .all-students .all-students-content .table-content .page .row .btn-delete .add:hover, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .edit-student .content .btn-delete .add:hover, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .btn-delete .edit-student .content .btn-edit .delete:hover, .content-wrapper .content-inner .edit-student .content .all-students .all-students-content .table-content .page .row .btn-delete .delete:hover, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .edit-student .content .btn-delete .delete:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #8A2BE2;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+}
+
+.content-wrapper .content-inner .edit-student .content .btn-edit .edit:hover:active, .content-wrapper .content-inner .edit-student .content .all-students .all-students-content .table-content .page .row .btn-delete .edit:hover:active, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .edit-student .content .btn-delete .edit:hover:active, .content-wrapper .content-inner .edit-student .content .btn-edit .add:hover:active, .content-wrapper .content-inner .edit-student .content .all-students .all-students-content .table-content .page .row .btn-delete .add:hover:active, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .edit-student .content .btn-delete .add:hover:active, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .btn-delete .edit-student .content .btn-edit .delete:hover:active, .content-wrapper .content-inner .edit-student .content .all-students .all-students-content .table-content .page .row .btn-delete .delete:hover:active, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .edit-student .content .btn-delete .delete:hover:active {
+  background-color: #8A2BE2;
+  color: #fff;
+}
+
+.content-wrapper .content-inner .all-students {
+  width: 84vw;
+  margin: 0 auto;
+}
+
+.content-wrapper .content-inner .all-students .all-students-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10vh auto 5vh;
+      grid-template-rows: 10vh auto 5vh;
+  margin-bottom: 5vmin;
+  height: 35vh;
+  min-height: 35vh;
+  max-height: 35vh;
+  -webkit-box-shadow: 0 1vmin 2vmin rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 0 -1vmin 3vmin;
+          box-shadow: 0 1vmin 2vmin rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 0 -1vmin 3vmin;
+  overflow-x: auto;
+}
+
+.content-wrapper .content-inner .all-students .all-students-content .head-table {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (12vw)[7];
+      grid-template-columns: repeat(7, 12vw);
+  margin-top: 2vmin;
+  height: 8vh;
+}
+
+.content-wrapper .content-inner .all-students .all-students-content .head-table .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: lightgray .3vmin solid;
+}
+
+.content-wrapper .content-inner .all-students .all-students-content .table-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-wrapper .content-inner .all-students .all-students-content .table-content .page {
+  margin-top: 1vmin;
+}
+
+.content-wrapper .content-inner .all-students .all-students-content .table-content .page .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (12vw)[7];
+      grid-template-columns: repeat(7, 12vw);
+}
+
+.content-wrapper .content-inner .all-students .all-students-content .table-content .page .row:hover {
+  -webkit-box-shadow: 0 0.5vmin 1vmin rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 0 -0.5vmin 1vmin;
+          box-shadow: 0 0.5vmin 1vmin rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 0 -0.5vmin 1vmin;
+  cursor: pointer;
+}
+
+.content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .student {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: lightgray .3vmin solid;
+  border-bottom: lightgray .3vmin solid;
+  padding: 1.5vmin 0;
+}
+
+.content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .student .btn-edit, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .student .btn-delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.5vmin;
+}
+
+.content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .btn-edit, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .btn-delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .btn-edit .edit, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .btn-delete .edit, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .edit-student .content .btn-edit .add, .content-wrapper .content-inner .edit-student .content .all-students .all-students-content .table-content .page .row .btn-edit .add, .content-wrapper .content-inner .edit-student .content .all-students .all-students-content .table-content .page .row .btn-delete .add, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .edit-student .content .btn-delete .add, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .btn-delete .delete {
+  padding: 1vmin 2vmin;
+  font-size: 2.5vmin;
+  font-family: "GT Walsheim Pro", sans-serif;
+  border: #8A2BE2 .4vmin solid;
+  border-radius: 1.3vmin;
+  background-color: #8A2BE2;
+  color: #fff;
+}
+
+.content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .btn-edit .edit:hover, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .btn-delete .edit:hover, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .edit-student .content .btn-edit .add:hover, .content-wrapper .content-inner .edit-student .content .all-students .all-students-content .table-content .page .row .btn-edit .add:hover, .content-wrapper .content-inner .edit-student .content .all-students .all-students-content .table-content .page .row .btn-delete .add:hover, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .edit-student .content .btn-delete .add:hover, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .btn-delete .delete:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #8A2BE2;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+}
+
+.content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .btn-edit .edit:hover:active, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .btn-delete .edit:hover:active, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .edit-student .content .btn-edit .add:hover:active, .content-wrapper .content-inner .edit-student .content .all-students .all-students-content .table-content .page .row .btn-edit .add:hover:active, .content-wrapper .content-inner .edit-student .content .all-students .all-students-content .table-content .page .row .btn-delete .add:hover:active, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .edit-student .content .btn-delete .add:hover:active, .content-wrapper .content-inner .all-students .all-students-content .table-content .page .row .btn-delete .delete:hover:active {
+  background-color: #8A2BE2;
+  color: #fff;
+}
+/*# sourceMappingURL=content.css.map */

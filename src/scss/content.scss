@@ -1,0 +1,192 @@
+.content-wrapper{
+  & .content-inner{
+    display: grid;
+    grid-template-rows: 50vh 40vh;
+
+    & .edit-student{
+      width: 40vw;
+      margin: 0 auto;
+
+      & .content{
+        display: grid;
+        grid-template-rows: repeat(5, 8vh);
+        margin: 5vh 0;
+        justify-content: center;
+        border-radius: 1.5vmin;
+        box-shadow: 0 1vmin 2vmin rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 0 -1vmin 3vmin;
+
+        & .data-edit{
+          display: grid;
+          grid-template-columns: 60% 40%;
+
+          & .label-edit-data,
+          & .input-edit-data{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 3vmin;
+          }
+
+          & .label-edit-data{
+            padding-left: 2vmin;
+          }
+
+          & .input-edit-data{
+            & .input-edit{
+              width: 80%;
+            }
+          }
+        }
+
+        & .btn-edit{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 1.5vmin;
+
+          & .edit{
+            padding: 1vmin 2vmin;
+            font-size: 3vmin;
+            font-family: "GT Walsheim Pro", sans-serif;
+            border: #8A2BE2 .4vmin solid;
+            border-radius: 1.3vmin;
+            background-color: #8A2BE2;
+            color: #fff;
+
+            &:hover{
+              cursor: pointer;
+              background-color: #fff;
+              color: #8A2BE2;
+              transition-duration: .4s;
+
+              &:active{
+                background-color: #8A2BE2;
+                color: #fff;
+              }
+            }
+          }
+
+          & .add{
+            @extend .edit
+          }
+        }
+      }
+    }
+
+    & .all-students{
+      width: 84vw;
+      margin: 0 auto;
+
+      & .all-students-content{
+        display: grid;
+        grid-template-rows: 10vh auto 5vh;
+        margin-bottom: 5vmin;
+        height: 35vh;
+        min-height: 35vh;
+        max-height: 35vh;
+        box-shadow: 0 1vmin 2vmin rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 0 -1vmin 3vmin;
+        overflow-x: auto;
+
+        & .head-table{
+          display: grid;
+          grid-template-columns: repeat(7, 12vw);
+          margin-top: 2vmin;
+          height: 8vh;
+
+          & .label{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            border-left: lightgray .3vmin solid;
+          }
+        }
+
+        & .table-content{
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          align-items: center;
+
+          & .page{
+            margin-top: 1vmin;
+
+            & .row{
+              display: grid;
+              grid-template-columns: repeat(7, 12vw);
+
+              &:hover{
+                box-shadow: 0 .5vmin 1vmin rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 0 -.5vmin 1vmin;
+                cursor: pointer;
+              }
+
+              & .student{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                border-top: lightgray .3vmin solid;
+                border-bottom: lightgray .3vmin solid;
+                padding: 1.5vmin 0;
+
+                & .btn-edit{
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-between;
+                  align-items: center;
+                  padding: 0 1.5vmin;
+        
+                }
+              }
+
+              & .btn-edit{
+                display: flex;
+                flex-wrap: wrap;
+
+                & .edit{
+                  padding: 1vmin 2vmin;
+                  font-size: 2.5vmin;
+                  font-family: "GT Walsheim Pro", sans-serif;
+                  border: #8A2BE2 .4vmin solid;
+                  border-radius: 1.3vmin;
+                  background-color: #8A2BE2;
+                  color: #fff;
+      
+                  &:hover{
+                    cursor: pointer;
+                    background-color: #fff;
+                    color: #8A2BE2;
+                    transition-duration: .4s;
+      
+                    &:active{
+                      background-color: #8A2BE2;
+                      color: #fff;
+                    }
+                  }
+                }
+              }
+
+              & .btn-delete{
+                @extend .btn-edit;
+
+                & .delete{
+                  @extend .edit;
+
+                  &:hover{
+                    @extend .edit:hover;
+
+                    &:active{
+                      @extend .edit:hover:active;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
