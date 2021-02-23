@@ -1,11 +1,5 @@
 'use strict'
 
-let degreeEvent = {
-    'hard' : 'hard',
-    'medium' : 'medium',
-    'simple' : 'simple'
-}
-
 class Event{
     dateEvent;
     timeEvent;
@@ -17,7 +11,7 @@ class Event{
      * @param dataEvent {Date}
      * @param timeEvent {Date}
      * @param nameEvent {String}
-     * @param degreeEvent {degreeEvent}
+     * @param degreeEvent {String}
      * @param notesEvent {String}
      */
     constructor(dataEvent, timeEvent,

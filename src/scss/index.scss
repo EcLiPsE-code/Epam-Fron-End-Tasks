@@ -6,23 +6,40 @@ body{
   padding: 0;
   box-sizing: border-box;
 }
-input{
-  margin: 0;
-  padding: 0 .6vmin;
-  font-family: "Google Sans", Roboto, sans-serif;
-  font-size: 2.5vmin;
-  border: none;
-  border-bottom: lightgray .2vmin solid;
-  width: 10vw;
+
+.root{
+  display: grid;
+  grid-template-rows: 40vh 40vh 40vh 40vh 60vh;
+}
+
+.btn{
+  padding: 1vmin 3vmin;
+  background-color: #d757f7;
+  color: #fff;
+  border-radius: 1vmin;
+  border: #d757f7 .4vmin solid;
 
   &:hover{
-    border-bottom: lightgray .4vmin solid;
+    background-color: #fff;
+    color: #d757f7;
     transition-duration: .4s;
+
+    &:active{
+      background-color: #d757f7;
+      color: #fff;
+    }
   }
 }
 
+input{
+  padding: 1vmin;
+  font-size: 2.5vmin;
+  border-radius: 1vmin;
+  max-width: 20vw;
+}
+
 select{
-  font-family: "Google Sans", Roboto, sans-serif;
+  padding: 1vmin;
   font-size: 2.5vmin;
   border-radius: 1vmin;
 }

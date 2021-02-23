@@ -2,221 +2,117 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="./src/css/index.css">
-    <link rel="stylesheet" href="./src/css/content.css">
-    <script defer src="./src/js/utils/util.js"></script>
-    <script defer src="./src/js/index.js"></script>
+    <title>Task 8</title>
+    <link rel="stylesheet" href="/scss/import.css">
 </head>
 <body>
-    <div class="page">
-        <div class="part part-1">
-            <div class="part-label">
-                AJAX file_1.json
-            </div>
-            <div class="part-content" id="content-1">
-
-            </div>
-        </div>
-        <div class="part part-2">
-            <div class="part-label">
-                AJAX file_2.json
-            </div>
-            <div class="part-content" id="content-2">
-
+    <div class="root">
+        <div class="data">
+            <div class="data-inner inner">
+               <div class="label">
+                    Ajax file1.json
+               </div>
+               <div class="data-content" id="content-1">
+                    
+               </div>
             </div>
         </div>
-        <div class="part part-3">
-            <div class="part-label">
-                AJAX file_3.json
-            </div>
-            <div class="part-content" id="content-3">
+        <div class="data">
+            <div class="data-inner inner">
+                <div class="label">
+                    Ajax file2.json
+               </div>
+               <div class="data-content" id="content-2">
 
+               </div>
             </div>
         </div>
-        <div class="part part-4">
-            <div class="part-label">
-                AJAX request execution statuses
-            </div>
-            <div class="part-content">
+        <div class="data">
+            <div class="data-inner inner">
+                <div class="label">
+                    Ajax file3.json
+               </div>
+               <div class="data-content" id="content-3">
 
+               </div>
             </div>
         </div>
-        <div class="part part-5">
-            <div class="part-label">
-                Editing and overwriting files
+        <div class="log">
+            <div class="log-inner inner">
+                <div class="label">
+                    Ajax log
+               </div>
+               <div class="data-content" id="log">
+
+               </div>
             </div>
-            <div class="part-content edit-overwriting-data">
-                <div class="add-data">
-                    <div class="add">
-                        <div>
-                            Date event
-                        </div>
-                        <div class="add-separator">
-                            :
-                        </div>
-                        <div>
-                            <input type="date" id="dateEvent">
-                        </div>
-                    </div>
-                    <div class="add">
-                        <div>
-                            Time event
-                        </div>
-                        &nbsp;
-                        <div class="add-separator">
-                            :
-                        </div>
-                        &nbsp;
-                        <div>
-                            <input type="time" id="timeEvent">
-                        </div>
-                    </div>
-                    <div class="add">
-                        <div>
-                            Name event
-                        </div>
-                        &nbsp;
-                        <div class="add-separator">
-                            :
-                        </div>
-                        &nbsp;
-                        <div>
-                            <input type="text" id="nameEvent">
-                        </div>
-                    </div>
-                    <div class="add">
-                        <div>
-                            Degree event
-                        </div>
-                        &nbsp;
-                        <div class="add-separator">
-                            :
-                        </div>
-                        &nbsp;
-                        <div>
-                            <input type="text" id="degreeEvent">
-                        </div>
-                    </div>
-                    <div class="add">
-                        <div>
-                            Notes event
-                        </div>
-                        &nbsp;
-                        <div class="add-separator">
-                            :
-                        </div>
-                        &nbsp;
-                        <div>
-                            <input type="text" id="notesEvent">
-                        </div>
-                    </div>
-                    <div class="btn-add">
-                        <div class="btn" id="btnAddEvent">
-                            Add
-                        </div>
-                        <div class="select-file">
-                            <select name="" id="add-file-name">
-                                <option value="file1.json">File1.json</option>
-                                <option value="file2.json">File2.json</option>
-                                <option value="file3.json">File3.json</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="edit-data">
-                    <div class="edit">
-                        <div>
-                            Date event
-                        </div>
-                        &nbsp;
-                        <div class="add-separator">
-                            :
-                        </div>
-                        &nbsp;
-                        <div>
-                            <input type="date">
-                        </div>
-                    </div>
-                    <div class="edit">
-                        <div>
-                            Time event
-                        </div>
-                        &nbsp;
-                        <div class="add-separator">
-                            :
-                        </div>
-                        &nbsp;
-                        <div>
-                            <input type="time">
-                        </div>
-                    </div>
-                    <div class="edit">
-                        <div>
-                            Name event
-                        </div>
-                        &nbsp;
-                        <div class="add-separator">
-                            :
-                        </div>
-                        &nbsp;
-                        <div>
-                            <input type="text">
-                        </div>
-                    </div>
-                    <div class="edit">
-                        <div>
-                            Degree event
-                        </div>
-                        &nbsp;
-                        <div class="add-separator">
-                            :
-                        </div>
-                        &nbsp;
-                        <div>
-                            <input type="text">
-                        </div>
-                    </div>
-                    <div class="edit">
-                        <div>
-                            Notes event
-                        </div>
-                        &nbsp;
-                        <div class="add-separator">
-                            :
-                        </div>
-                        &nbsp;
-                        <div>
-                            <input type="text">
-                        </div>
-                    </div>
-                    <div class="btn-edit">
-                        <div class="btns">
-                            <div class="btn">
-                                Edit
+        </div>
+        <div class="add-event">
+            <div class="edd-event-inner inner">
+                <div class="label">
+                    Create event
+               </div>
+               <div class="data-content">
+                    <div class="add-content content">
+                        <div class="data-event add">
+                            <div>
+                                Data event:
                             </div>
-                            <div class="btn">
-                                Select
+                            <div>
+                                <input type="date" id="add-date-event">
                             </div>
                         </div>
-                        <div class="select-file">
-                            <select name="" id="">
-                                <option value="file1">File1.json</option>
-                                <option value="file2">File2.json</option>
-                                <option value="file3">File3.json</option>
-                            </select>
+                        <div class="time-event add">
+                            <div>
+                                Time event:
+                            </div>
+                            <div>
+                                <input type="time" id="add-time-event">
+                            </div>
                         </div>
-                        <div class="select-file">
-                            <select name="" id="">
-                                <option value="doc1">object1</option>
-                                <option value="file2">object2</option>
-                                <option value="file3">object3</option>
-                            </select>
+                        <div class="name-event add">
+                            <div>
+                                Name event:
+                            </div>
+                            <div>
+                                <input type="text" id="add-name-event">
+                            </div>
+                        </div>
+                        <div class="degree-importance add">
+                            <div>
+                                Degree Importance:
+                            </div>
+                            <div>
+                                <input type="text" id="add-degreeImportance-event">
+                            </div>
+                        </div>
+                        <div class="nodes add">
+                            <div>
+                                Nodes:
+                            </div>
+                            <div>
+                                <input type="text" id="add-nodes-event">
+                            </div>
+                        </div>
+                        <div class="btn-add add">
+                            <div class="btn" id="add-event-btn">
+                                Add
+                            </div>
+                            <div class="select-file">
+                                <select name="" id="file-name-add">
+                                    <option value="file1.json">Files1</option>
+                                    <option value="file2.json">Files2</option>
+                                    <option value="file3.json">Files3</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                </div>
+               </div>
             </div>
         </div>
     </div>
+    <script src="/js/utils/Event.js"></script>
+    <script src="/js/utils/util.js"></script>
+    <script src="/js/layout.js"></script>
 </body>
 </html>

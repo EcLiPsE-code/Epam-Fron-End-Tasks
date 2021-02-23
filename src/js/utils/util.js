@@ -8,20 +8,36 @@ function convertToObjet(jsonObject){
     return JSON.parse(jsonObject)
 }
 
+function createURL(hostname){
+    return function(pathname){
+        return `http://${hostname}/${pathname}`
+    }
+}
 
-function readFiles(fileName, contentId){
+function createLog(msg, color){
+    let rootEl = document.createElement('div')
+    rootEl.innerHTML = msg
+    rootEl.style.color = color
+    return rootEl
+}
 
-    let objects
-    fetch(`src/files/${fileName}`, {
-        method: 'GET'
-    })
-        .then(response => response.json())
-        .then(response => {
-            objects = response
-            objects.forEach((item) => {
-                let root = document.createElement('div')
-                root.innerHTML = JSON.stringify(item)
-                document.getElementById(contentId).appendChild(root)
-            })
-        })
+function updateDataEvent(interval){
+    return function(timeout, fileName, contentId){
+        setTimeout(() => {
+            setInterval(() => {
+                getFile(fileName, contentId)
+                document.getElementById('log').appendChild(createLog(`Data whith file "${fileName}" sucessfully updated!`, 'yellow'))
+            }, interval)
+        }, timeout)
+    }
+}
+
+function createEvent(){
+    return {
+        'dateEvent' : document.getElementById('add-date-event').value.toString(),
+        'timeEvent' : document.getElementById('add-time-event').value.toString(),
+        'nameEvent' : document.getElementById('add-name-event').value.toString(),
+        'degreeImportanceEvent' : document.getElementById('add-degreeImportance-event').value.toString(),
+        'nodesEvent' : document.getElementById('add-nodes-event').value.toString(),
+    }
 }

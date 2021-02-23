@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "name": "epam-fron-end-tasks",
+  "description": "<h1>Task 8</h1>\r <p>Необходимо создать простейшее web-приложение TODO-LIST</p>\r <p><strong>Требования:</strong></p>\r <ul>\r   <li>Приложение должно выглядеть как HTML-страница с 5 областями.</li>\r   <li>Первые три области должны загружать данные через AJAX из файлов</li>\r   <li>Данные для 1-ой области должны загружаться с задержкой в 1 секунду, для 2-ой - 2 секунды, 3-ей - 3 секунды.</li>\r   <li>Создать класс, содержащий информацию о событии (дата события, время события, наименование события, степень важности, примечания).</li>\r   <li>Данные объекты должны быть сериализованы в JSON в файлы.</li>\r   <li>В четвертой области вывести статусы выполнения AJAX-запросов.</li>\r   <li>В пятой области предусмотреть возможность редактирования данных и перезаписи файлов.</li>\r </ul>",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EcLiPsE-code/Epam-Fron-End-Tasks.git"
+  },
+  "author": "Solodkov M.A <mikhailsaladkou@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EcLiPsE-code/Epam-Fron-End-Tasks/issues"
+  },
+  "homepage": "https://github.com/EcLiPsE-code/Epam-Fron-End-Tasks#readme"
 }
