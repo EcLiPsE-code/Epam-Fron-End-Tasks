@@ -127,6 +127,7 @@ function drawImage3(){
     ctx.arc(170, 330, 5, 0, 2*Math.PI, false);
     ctx.stroke()
 }
+
 drawImage1()
 drawImage2()
 drawImage3()
