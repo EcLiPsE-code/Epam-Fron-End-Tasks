@@ -104,6 +104,28 @@ function drawImage3(){
     ctx.beginPath()
     ctx.ellipse(280, 60, 5, 20, Math.PI / 2, 0, 2 * Math.PI)
     ctx.stroke()
+
+    ctx.beginPath()
+    ctx.moveTo(260, 60)
+    ctx.lineTo(260, 120)
+    ctx.moveTo(300, 60)
+    ctx.lineTo(300, 120)
+    ctx.stroke()
+
+    ctx.beginPath()
+    ctx.moveTo(120, 280)
+    ctx.lineTo(120, 370)
+    ctx.moveTo(200, 280)
+    ctx.lineTo(200, 370)
+    ctx.moveTo(120, 280)
+    ctx.quadraticCurveTo(160, 250, 200, 280);
+    ctx.moveTo(160, 264)
+    ctx.lineTo(160, 370)
+    ctx.moveTo(150, 330)
+    ctx.arc(150, 330, 5, 0, 2*Math.PI, false);
+    ctx.moveTo(170, 330)
+    ctx.arc(170, 330, 5, 0, 2*Math.PI, false);
+    ctx.stroke()
 }
 drawImage1()
 drawImage2()
